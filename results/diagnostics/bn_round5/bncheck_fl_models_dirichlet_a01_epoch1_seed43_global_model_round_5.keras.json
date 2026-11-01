@@ -1,0 +1,9 @@
+{
+  "model": "/content/gdrive/MyDrive/fl_models_dirichlet_a01_epoch1_seed43/global_model_round_5.keras",
+  "acc_before": 0.06518536705131353,
+  "macro_f1_before": 0.009603877140632454,
+  "acc_after_bn_recalibration": 0.4663638595629757,
+  "macro_f1_after": 0.2931972859105498,
+  "first_bn_moving_mean_abs": 0.13312016427516937,
+  "first_bn_moving_var": 0.01439895760267973
+}

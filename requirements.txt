@@ -1,0 +1,12 @@
+# Analysis scripts (analysis/). Tested with Python 3.13, numpy 2.5, pandas 3.0,
+# scipy 1.18, scikit-learn 1.9 and matplotlib 3.11.
+numpy>=1.24
+pandas>=2.0
+scipy>=1.9
+scikit-learn>=1.3
+matplotlib>=3.7
+
+# Training and diagnostics (training/, diagnostics/) were run on Google Colab and
+# additionally need TensorFlow 2.x (as preinstalled on Colab) and psutil:
+# tensorflow
+# psutil

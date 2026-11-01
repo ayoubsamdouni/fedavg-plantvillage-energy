@@ -1,0 +1,10 @@
+model,logged_round,logged_acc,recomputed_acc,macro_f1,match
+/content/gdrive/MyDrive/fl_ckpt/global_weights.npz,30,0.970414936542511,0.9704149275718144,0.9341467882538926,True
+/content/gdrive/MyDrive/fl_ckpt_dirichlet_a01/global_weights.npz,30,0.8433586955070496,0.8432359440216057,0.7385372183369495,True
+/content/gdrive/MyDrive/fl_ckpt_dirichlet_a01_epoch1/global_weights.npz,30,0.7639332413673401,0.763810459121041,0.6111785339225734,True
+/content/gdrive/MyDrive/fl_ckpt_dirichlet_a01_epoch1_seed43/global_weights.npz,30,0.6992388963699341,0.6991161306162533,0.5757355786369898,True
+/content/gdrive/MyDrive/fl_ckpt_dirichlet_a01_seed43/global_weights.npz,30,0.8267861604690552,0.8266633930763565,0.7695580877063316,True
+/content/gdrive/MyDrive/fl_ckpt_dirichlet_a01_seed44/global_weights.npz,30,0.7817333936691284,0.7818561257058679,0.686630845946598,True
+/content/gdrive/MyDrive/fl_ckpt_dirichlet_a05/global_weights.npz,30,0.9496685266494752,0.949668548981095,0.9000098098879613,True
+/content/gdrive/MyDrive/fl_ckpt_dirichlet_a05_e1/global_weights.npz,30,0.8049349188804626,0.8046894181193224,0.6669350325149815,False
+/content/gdrive/MyDrive/fl_ckpt_dirichlet_a05_e1_seed43/global_weights.npz,30,0.8123005032539368,0.8124232752271053,0.7083443149184967,True

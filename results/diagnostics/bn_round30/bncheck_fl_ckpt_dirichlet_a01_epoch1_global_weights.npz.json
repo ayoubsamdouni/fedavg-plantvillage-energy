@@ -1,0 +1,9 @@
+{
+  "model": "/content/gdrive/MyDrive/fl_ckpt_dirichlet_a01_epoch1/global_weights.npz",
+  "acc_before": 0.763810459121041,
+  "macro_f1_before": 0.6111785339225734,
+  "acc_after_bn_recalibration": 0.7652835747606187,
+  "macro_f1_after": 0.6126001014268277,
+  "first_bn_moving_mean_abs": 0.14711980521678925,
+  "first_bn_moving_var": 0.00787496380507946
+}

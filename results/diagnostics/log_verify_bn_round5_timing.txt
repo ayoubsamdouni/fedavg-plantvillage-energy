@@ -1,0 +1,136 @@
+{
+  "total_params": 1084472,
+  "trainable": 1076920,
+  "non_trainable": 7552,
+  "upload_bytes_per_client": 4337888,
+  "upload_MB_per_client": 4.14,
+  "upload_bytes_5_clients": 21689440
+}
+I0000 00:00:1791829575.686464    1050 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+W0000 00:00:1791829582.496061    1050 gpu_bfc_allocator.cc:47] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was false.
+I0000 00:00:1791829582.497909    1050 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13757 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
+{
+  "n_images": 54305,
+  "n_train": 46159,
+  "n_test": 8146,
+  "test_hash": "28a1270fcd8b",
+  "listing_is_sorted": false,
+  "order_file": "/content/gdrive/MyDrive/legacy/listing_order.npz"
+}
+Run 'freeze' again in a NEW Colab session: if test_hash is identical, the Drive listing order is stable across sessions.
+OK   logged=0.9704 now=0.9704  /content/gdrive/MyDrive/fl_ckpt/global_weights.npz
+OK   logged=0.8434 now=0.8432  /content/gdrive/MyDrive/fl_ckpt_dirichlet_a01/global_weights.npz
+OK   logged=0.7639 now=0.7638  /content/gdrive/MyDrive/fl_ckpt_dirichlet_a01_epoch1/global_weights.npz
+OK   logged=0.6992 now=0.6991  /content/gdrive/MyDrive/fl_ckpt_dirichlet_a01_epoch1_seed43/global_weights.npz
+OK   logged=0.8268 now=0.8267  /content/gdrive/MyDrive/fl_ckpt_dirichlet_a01_seed43/global_weights.npz
+OK   logged=0.7817 now=0.7819  /content/gdrive/MyDrive/fl_ckpt_dirichlet_a01_seed44/global_weights.npz
+OK   logged=0.9497 now=0.9497  /content/gdrive/MyDrive/fl_ckpt_dirichlet_a05/global_weights.npz
+DIFF logged=0.8049 now=0.8047  /content/gdrive/MyDrive/fl_ckpt_dirichlet_a05_e1/global_weights.npz
+OK   logged=0.8123 now=0.8124  /content/gdrive/MyDrive/fl_ckpt_dirichlet_a05_e1_seed43/global_weights.npz
+test_hash today = 28a1270fcd8b
+I0000 00:00:1791829652.791617    1415 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1791829665.080109    1415 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13757 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
+I0000 00:00:1791829685.054740    1490 service.cc:153] XLA service 0x7d0104043180 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1791829685.054781    1490 service.cc:161]   StreamExecutor [0]: Tesla T4, Compute Capability 7.5 (Driver: 13.0.0; Runtime: 12.9.0; Toolkit: 12.5.0; DNN: 9.27.0)
+I0000 00:00:1791829685.126767    1490 dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+I0000 00:00:1791829685.467066    1490 cuda_dnn.cc:461] Loaded cuDNN version 92700
+I0000 00:00:1791829696.537932    1490 device_compiler.h:208] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+{
+  "model": "/content/gdrive/MyDrive/fl_models_dirichlet_a01_epoch1/global_model_round_5.keras",
+  "acc_before": 0.10189049840412473,
+  "macro_f1_before": 0.008126200769711045,
+  "acc_after_bn_recalibration": 0.5653081266879451,
+  "macro_f1_after": 0.3697433063450554,
+  "first_bn_moving_mean_abs": 0.167001873254776,
+  "first_bn_moving_var": 0.01804143562912941
+}
+Interpretation: if accuracy jumps far above ~10% after recalibration, the 'freeze' is a BatchNorm running-statistics effect, not a lack of learning signal.
+I0000 00:00:1791831667.599955   11305 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1791831678.114007   11305 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13757 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
+I0000 00:00:1791831683.162953   11375 service.cc:153] XLA service 0x7fdd4c255dd0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1791831683.162993   11375 service.cc:161]   StreamExecutor [0]: Tesla T4, Compute Capability 7.5 (Driver: 13.0.0; Runtime: 12.9.0; Toolkit: 12.5.0; DNN: 9.27.0)
+I0000 00:00:1791831683.189730   11375 dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+I0000 00:00:1791831683.496940   11375 cuda_dnn.cc:461] Loaded cuDNN version 92700
+I0000 00:00:1791831692.090844   11375 device_compiler.h:208] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+{
+  "model": "/content/gdrive/MyDrive/fl_models_dirichlet_a01_epoch1_seed43/global_model_round_5.keras",
+  "acc_before": 0.06518536705131353,
+  "macro_f1_before": 0.009603877140632454,
+  "acc_after_bn_recalibration": 0.4663638595629757,
+  "macro_f1_after": 0.2931972859105498,
+  "first_bn_moving_mean_abs": 0.13312016427516937,
+  "first_bn_moving_var": 0.01439895760267973
+}
+Interpretation: if accuracy jumps far above ~10% after recalibration, the 'freeze' is a BatchNorm running-statistics effect, not a lack of learning signal.
+I0000 00:00:1791832446.080345   14965 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1791832457.304159   14965 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13757 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
+I0000 00:00:1791832461.941658   15032 service.cc:153] XLA service 0x7ec3a0244ab0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1791832461.941700   15032 service.cc:161]   StreamExecutor [0]: Tesla T4, Compute Capability 7.5 (Driver: 13.0.0; Runtime: 12.9.0; Toolkit: 12.5.0; DNN: 9.27.0)
+I0000 00:00:1791832461.968961   15032 dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+I0000 00:00:1791832462.283127   15032 cuda_dnn.cc:461] Loaded cuDNN version 92700
+I0000 00:00:1791832472.203182   15032 device_compiler.h:208] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+{
+  "model": "/content/gdrive/MyDrive/fl_models_dirichlet_a05_e1/global_model_round_5.keras",
+  "acc_before": 0.09869874785170636,
+  "macro_f1_before": 0.004728021170244046,
+  "acc_after_bn_recalibration": 0.5696047139700466,
+  "macro_f1_after": 0.3752747510617771,
+  "first_bn_moving_mean_abs": 0.14748141169548035,
+  "first_bn_moving_var": 0.016040092334151268
+}
+Interpretation: if accuracy jumps far above ~10% after recalibration, the 'freeze' is a BatchNorm running-statistics effect, not a lack of learning signal.
+I0000 00:00:1791832567.283876   15722 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1791832577.658044   15722 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13757 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
+I0000 00:00:1791832583.126892   15786 service.cc:153] XLA service 0x7d9ba8244570 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1791832583.126934   15786 service.cc:161]   StreamExecutor [0]: Tesla T4, Compute Capability 7.5 (Driver: 13.0.0; Runtime: 12.9.0; Toolkit: 12.5.0; DNN: 9.27.0)
+I0000 00:00:1791832583.154270   15786 dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+I0000 00:00:1791832583.467098   15786 cuda_dnn.cc:461] Loaded cuDNN version 92700
+I0000 00:00:1791832593.202869   15786 device_compiler.h:208] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+{
+  "model": "/content/gdrive/MyDrive/fl_models_dirichlet_a05_e1_seed43/global_model_round_5.keras",
+  "acc_before": 0.04652590228332924,
+  "macro_f1_before": 0.005283834211873081,
+  "acc_after_bn_recalibration": 0.5794254849005647,
+  "macro_f1_after": 0.35668482146618224,
+  "first_bn_moving_mean_abs": 0.09266526997089386,
+  "first_bn_moving_var": 0.012370560318231583
+}
+Interpretation: if accuracy jumps far above ~10% after recalibration, the 'freeze' is a BatchNorm running-statistics effect, not a lack of learning signal.
+I0000 00:00:1791832680.892600   16445 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1791832692.065659   16445 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13757 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
+I0000 00:00:1791832696.165298   16513 service.cc:153] XLA service 0x7f23c40434e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1791832696.165336   16513 service.cc:161]   StreamExecutor [0]: Tesla T4, Compute Capability 7.5 (Driver: 13.0.0; Runtime: 12.9.0; Toolkit: 12.5.0; DNN: 9.27.0)
+I0000 00:00:1791832696.191947   16513 dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+I0000 00:00:1791832696.515892   16513 cuda_dnn.cc:461] Loaded cuDNN version 92700
+I0000 00:00:1791832706.023636   16513 device_compiler.h:208] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+{
+  "n_images": 3000,
+  "listing_and_split_sec": 5.293706178665161,
+  "model_build_sec": 2.7587273120880127,
+  "fit_total_sec": 683.1885056495667,
+  "epoch_sec": [
+    651.798821926117,
+    15.254966497421265,
+    16.126935720443726
+  ],
+  "one_more_epoch_sec": 15.680969715118408
+}
+If epoch 1 >> epochs 2-3, the fixed cost is first-epoch file I/O + graph tracing inside model.fit, not process spawning.
+I0000 00:00:1791832811.404889   17242 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1791832821.424678   17242 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13757 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
+I0000 00:00:1791832847.244471   17305 service.cc:153] XLA service 0x7cecdc0846a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1791832847.244500   17305 service.cc:161]   StreamExecutor [0]: Tesla T4, Compute Capability 7.5 (Driver: 13.0.0; Runtime: 12.9.0; Toolkit: 12.5.0; DNN: 9.27.0)
+I0000 00:00:1791832847.587941   17305 dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+I0000 00:00:1791832850.266236   17305 cuda_dnn.cc:461] Loaded cuDNN version 92700
+I0000 00:00:1791832850.947058   17305 dot_merger.cc:481] Merging Dots in computation: a_inference_one_step_on_data_20306__.185
+E0000 00:00:1791832858.525391   17305 cuda_timer.cc:87] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+I0000 00:00:1791832889.390120   17305 device_compiler.h:208] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+I0000 00:00:1791833444.921657   17305 dot_merger.cc:481] Merging Dots in computation: a_inference_one_step_on_data_20306__.185
+E0000 00:00:1791833446.717896   17305 cuda_timer.cc:87] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.

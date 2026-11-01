@@ -1,0 +1,8 @@
+{
+  "n_images": 54305,
+  "n_train": 46159,
+  "n_test": 8146,
+  "test_hash": "28a1270fcd8b",
+  "listing_is_sorted": false,
+  "order_file": "/content/gdrive/MyDrive/legacy/listing_order.npz"
+}
