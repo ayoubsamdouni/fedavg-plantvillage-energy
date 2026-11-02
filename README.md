@@ -2,7 +2,7 @@
 
 This repository accompanies the paper
 
-> A. Samdouni, K. Taji, K. Hicham, F. Ghanimi. **Statistical Heterogeneity, Resource and Energy Cost in Federated Learning for Plant Disease Diagnosis: A Multi-Seed Empirical Characterization of Federated Averaging** (submitted).
+> A. Samdouni, K. Taji, F. Ghanimi. **Statistical Heterogeneity, Resource and Energy Cost in Federated Learning for Plant Disease Diagnosis: A Multi-Seed Empirical Characterization of Federated Averaging** (submitted).
 >
 > Contact: Ayoub Samdouni, ayoub.samdouni@uit.ac.ma
 
